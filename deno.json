@@ -1,0 +1,6 @@
+{
+  "imports": {
+    "@feathersjs/express": "npm:@feathersjs/express@^5.0.30",
+    "@feathersjs/feathers": "npm:@feathersjs/feathers@^5.0.30"
+  }
+}
