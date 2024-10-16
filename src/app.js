@@ -19,5 +19,5 @@ app.listen(process.env.PORT | 3030);
 await services(app);
 
 app.on("listening", () => {
-    console.log("Server is running on localhost:3030");
+    console.log(`Server is running on localhost:${process.env.PORT}`);
 })

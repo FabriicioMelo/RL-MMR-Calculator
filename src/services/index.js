@@ -2,9 +2,7 @@ import * as fs from "node:fs";
 
 export default async function(app) {
 
-    const services = fs.readdirSync("./services").filter((service) => { return (service != "index.js"); });
-
-    console.log(services);
+    const services = fs.readdirSync("./src/services").filter((service) => { return (service != "index.js"); });
 
     for(const service of services) {
         try{
