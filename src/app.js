@@ -14,7 +14,7 @@ app.configure(express.rest());
 
 app.use(express.errorHandler());
 
-const port = process.env.PORT | 3030;
+const port = process.env.APP_PORT | 3030;
 
 app.listen(port).then(() => {
     console.log(`Server is running on localhost:${port}`);
