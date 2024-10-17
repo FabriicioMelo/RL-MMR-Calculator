@@ -140,8 +140,52 @@ export default class CalculateMMRService {
             ]
         ];
 
+        const iconTable = [
+            [
+                "./rank-icons/bronze-1.png",
+                "./rank-icons/bronze-2.png",
+                "./rank-icons/bronze-3.png",
+            ],
+            [
+                "./rank-icons/prata-1.png",
+                "./rank-icons/prata-2.png",
+                "./rank-icons/prata-3.png",
+            ],
+            [
+                "./rank-icons/ouro-1.png",
+                "./rank-icons/ouro-2.png",
+                "./rank-icons/ouro-3.png",
+            ],
+            [
+                "./rank-icons/platina-1.png",
+                "./rank-icons/platina-2.png",
+                "./rank-icons/platina-3.png",
+            ],
+            [
+                "./rank-icons/diamante-1.png",
+                "./rank-icons/diamante-2.png",
+                "./rank-icons/diamante-3.png",
+            ],
+            [
+                "./rank-icons/campeao-1.png",
+                "./rank-icons/campeao-2.png",
+                "./rank-icons/campeao-3.png",
+            ],
+            [
+                "./rank-icons/grandecampeao-1.png",
+                "./rank-icons/grandecampeao-2.png",
+                "./rank-icons/grandecampeao-3.png",
+            ],
+            [
+                "./rank-icons/lendasupersonic.png",
+            ],
+        ]
+
         if (mmrTable[elo][mode][tier].length === 0) return 404;
 
-        return {mmr: mmrTable[elo][mode][tier][division]};
+        return {
+            mmr: mmrTable[elo][mode][tier][division],
+            icon: iconTable[elo][tier]
+        };
     }
 }
